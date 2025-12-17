@@ -6,6 +6,10 @@ dotenv.config({
     path: "./env"
 })
 
+app.use(express.static("public"));
+app.use(express.json({limit:"16kb"}));
+
+
 const PORT = process.env.PORT || 3000;
 
 connectDB()
