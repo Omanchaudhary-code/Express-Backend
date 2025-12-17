@@ -1,0 +1,14 @@
+
+.localdevserver
+.sfdx
+coverage/
+.vscode
+jsconfig.json
+.env
+# Only prettify specifc static resources
+force-app/main/default/staticresources/*
+!/force-app/main/default/staticresources/lmsvf
+!/force-app/main/default/staticresources/sampleExternalResource
+
+# Exclude project config (edited by CI workflow)
+sfdx-project.json
